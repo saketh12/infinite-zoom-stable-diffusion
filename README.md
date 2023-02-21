@@ -9,5 +9,9 @@ A user friendly colab notebook to generate infinite loop videos in minutes (work
 [![Dream of a distant galaxy](https://github.com/BalintKomjati/smooth-infinite-zoom/blob/main/examples/Infinite%20Zoom%20-%20Dream%20of%20a%20distant%20galaxy.png)](https://www.youtube.com/watch?v=MPgv9qfpTuo&feature=youtu.be "Dream of a distant galaxy")
 
 
-https://user-images.githubusercontent.com/47415815/220369350-0cb3a390-f083-4daf-abc2-29226cdc1838.mp4
+
+
+
+
+https://user-images.githubusercontent.com/47415815/220369648-fbaae60d-0da8-4651-870c-156768b5ce36.mp4
 
