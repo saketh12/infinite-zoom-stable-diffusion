@@ -6,11 +6,12 @@ A user friendly colab notebook to generate infinite loop videos in minutes (work
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a>
 
-[![Dream of a distant galaxy](https://github.com/BalintKomjati/smooth-infinite-zoom/blob/main/examples/Infinite%20Zoom%20-%20Dream%20of%20a%20distant%20galaxy.png)](https://www.youtube.com/watch?v=MPgv9qfpTuo&feature=youtu.be "Dream of a distant galaxy")
+[![Dream of a distant galaxy](https://user-images.githubusercontent.com/47415815/220371698-b1c7771b-fad9-4cb3-828f-c8466693f953.png)](https://www.youtube.com/watch?v=MPgv9qfpTuo&feature=youtu.be "Dream of a distant galaxy")
 
 
 
 
+![Infinite Zoom - Dream of a distant galaxy](https://user-images.githubusercontent.com/47415815/220371698-b1c7771b-fad9-4cb3-828f-c8466693f953.png)
 
 
 https://user-images.githubusercontent.com/47415815/220369648-fbaae60d-0da8-4651-870c-156768b5ce36.mp4
