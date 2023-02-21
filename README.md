@@ -2,7 +2,7 @@
 
 ### A user friendly colab notebook to generate infinite loop videos in minutes (works on free colab plan)
   
-👇  
+Click here to craft your own video👇  
 <a target="_blank" href="https://colab.research.google.com/github/BalintKomjati/smooth-infinite-zoom/blob/main/smooth_infinite_zoom.ipynb">
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a>
