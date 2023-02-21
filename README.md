@@ -2,6 +2,7 @@
 
 ### A user friendly colab notebook to generate infinite loop videos in minutes (works on free colab plan)
   
+👇  
 <a target="_blank" href="https://colab.research.google.com/github/BalintKomjati/smooth-infinite-zoom/blob/main/smooth_infinite_zoom.ipynb">
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a>
@@ -35,7 +36,7 @@ https://user-images.githubusercontent.com/47415815/220379362-4ef3d810-9b4c-4376-
  - Original idea and 1st version of the notebook was created by [hardmaru](https://github.com/hardmaru)
  - Thereafter [BalintKomjati](https://github.com/BalintKomjati) made the following improvements:
     - Adopted to run on Google Colab
-    - Introduced "interpolation" between outpainted images so output is smoother. This also allows to use larger outpainting steps, which enables larger coherent structures to appear more easily on the video, without unpleasant jumps between to frames.
+    - Introduced "interpolation" between outpainted images to create smoother videos. This allows to use wider outpainting masks which tend to generate larger coherent structures, without unpleasant jumps between to frames.
     - Put the whole product into a intuitive, user friendly notebook (at least that was the intention :) )
 
 
