@@ -11,8 +11,7 @@ A user friendly colab notebook to generate infinite loop videos in minutes (work
 
 
 
-![Infinite Zoom - Dream of a distant galaxy](https://user-images.githubusercontent.com/47415815/220371698-b1c7771b-fad9-4cb3-828f-c8466693f953.png)
+https://user-images.githubusercontent.com/47415815/220372351-76a8b510-a42c-4025-99d3-9b6976cf10c4.mp4
 
 
-https://user-images.githubusercontent.com/47415815/220369648-fbaae60d-0da8-4651-870c-156768b5ce36.mp4
 
