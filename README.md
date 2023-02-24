@@ -35,17 +35,20 @@ Cave of Skulls:
 
 https://user-images.githubusercontent.com/47415815/220379362-4ef3d810-9b4c-4376-8200-29eba8ef16c3.mp4
 
+Videos above were generated using the default settings in the notebook. Other than random seed only 1st part of the prompt was changed according to the video title (with slight alternations in some cases) e.g. prompt = "glowing colorful fractals, concept art, HQ, 4k".  
+
 ### Credits
 
  - Original idea and 1st version of the notebook was created by [hardmaru](https://github.com/hardmaru)
  - Thereafter [BalintKomjati](https://github.com/BalintKomjati) made the following improvements:
     - Adopted to run on Google Colab
-    - Introduced "interpolation" between outpainted images to create smoother videos. This allows to use wider outpainting masks which tend to generate larger coherent structures, without unpleasant jumps between to frames.
+    - Introduced "interpolation" between outpainted images to create smoother videos. This allows to use wider outpainting masks which tend to generate larger coherent structures, without unpleasant jumps between frames.
     - Put the whole product into a intuitive, user friendly notebook (at least that was the intention :) )
 
 
 ### Backlog of potential improvements (contributions are welcome):
 
+ - AUTOMATIC1111 integration
  - Add the possibility for the output to "drift" between prompts (now uses the same prompt for all images with different seed)
  - Fix the issue that any resolution higer than 512 will drastically decrease the network's imagination resulting the generated video rather boring. (e.g. upscale after each inpainting step?)
  - Make movement in the video more realistic without "fisheye" distorsions
