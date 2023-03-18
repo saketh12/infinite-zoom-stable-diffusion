@@ -1,4 +1,4 @@
-# Smooth Infinite Zoom  
+#Infinite Zoom Stable diffusion
 
 ### A user friendly colab notebook to generate infinite loop videos in minutes (works on free colab plan)
   
@@ -35,7 +35,7 @@ Cave of Skulls:
 
 https://user-images.githubusercontent.com/47415815/220379362-4ef3d810-9b4c-4376-8200-29eba8ef16c3.mp4
 
-Videos above were generated using the default settings in the notebook. Other than random seed only 1st part of the prompt was changed according to the video title (with slight alternations in some cases) e.g. prompt = "glowing colorful fractals, concept art, HQ, 4k".  
+  
 
 ### Credits
 
