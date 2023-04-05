@@ -1,4 +1,3 @@
-import cv2
 import numpy as np
 import imageio
 from PIL import Image
@@ -23,7 +22,7 @@ def write_video(file_path, frames, fps, reversed=True, start_frame_dupe_amount=1
     # Duplicate the start and end frames
     start_frames = [frames[0]] * start_frame_dupe_amount
     end_frames = [frames[-1]] * last_frame_dupe_amount
-    
+
     # Write the duplicated frames to the video writer
     for frame in start_frames:
         # Convert PIL image to numpy array
