@@ -1,6 +1,7 @@
 import cv2
 import numpy as np
-
+import imageio
+from PIL import Image
 
 def write_video(file_path, frames, fps, reversed=True, start_frame_dupe_amount=15, last_frame_dupe_amount=30):
     """
@@ -11,29 +12,29 @@ def write_video(file_path, frames, fps, reversed=True, start_frame_dupe_amount=1
     :param reversed: if order of images to be reversed (default = True)
     """
     if reversed == True:
-        frames.reverse()
+        frames = frames[::-1]
 
+    # Get dimensions of the frames
     w, h = frames[0].size
-    fourcc = cv2.VideoWriter_fourcc('m', 'p', '4', 'v')
-    # fourcc = cv2.VideoWriter_fourcc('h', '2', '6', '4')
-    # fourcc = cv2.VideoWriter_fourcc(*'avc1')
-    writer = cv2.VideoWriter(file_path, fourcc, fps, (w, h))
 
-# start frame duplicated
-    for x in range(start_frame_dupe_amount):
-        np_frame = np.array(frames[0].convert('RGB'))
-        cv_frame = cv2.cvtColor(np_frame, cv2.COLOR_RGB2BGR)
-        writer.write(cv_frame)
+    # Create an imageio video writer
+    writer = imageio.get_writer(file_path, fps=fps)
 
+    # Write the frames to the video writer
     for frame in frames:
-        np_frame = np.array(frame.convert('RGB'))
-        cv_frame = cv2.cvtColor(np_frame, cv2.COLOR_RGB2BGR)
-        writer.write(cv_frame)
+        # Convert PIL image to numpy array
+        np_frame = np.array(frame)
+        writer.append_data(np_frame)
 
-# last frame duplicated
-    for x in range(last_frame_dupe_amount):
-        np_frame = np.array(frames[len(frames) - 1].convert('RGB'))
-        cv_frame = cv2.cvtColor(np_frame, cv2.COLOR_RGB2BGR)
-        writer.write(cv_frame)
+    # Duplicate the start and end frames
+    start_frames = [frames[0]] * start_frame_dupe_amount
+    end_frames = [frames[-1]] * last_frame_dupe_amount
 
-    writer.release()
+    # Write the duplicated frames to the video writer
+    for frame in start_frames + end_frames:
+        # Convert PIL image to numpy array
+        np_frame = np.array(frame)
+        writer.append_data(np_frame)
+
+    # Close the video writer
+    writer.close()
