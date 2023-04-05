@@ -20,19 +20,23 @@ def write_video(file_path, frames, fps, reversed=True, start_frame_dupe_amount=1
     # Create an imageio video writer
     writer = imageio.get_writer(file_path, fps=fps)
 
-    # Write the frames to the video writer
-    for frame in frames:
+    # Duplicate the start and end frames
+    start_frames = [frames[0]] * start_frame_dupe_amount
+    end_frames = [frames[-1]] * last_frame_dupe_amount
+    
+    # Write the duplicated frames to the video writer
+    for frame in start_frames:
         # Convert PIL image to numpy array
         np_frame = np.array(frame)
         writer.append_data(np_frame)
 
-    # Duplicate the start and end frames
-    start_frames = [frames[0]] * start_frame_dupe_amount
-    end_frames = [frames[-1]] * last_frame_dupe_amount
+    # Write the frames to the video writer
+    for frame in frames:
+        np_frame = np.array(frame)
+        writer.append_data(np_frame)
 
     # Write the duplicated frames to the video writer
-    for frame in start_frames + end_frames:
-        # Convert PIL image to numpy array
+    for frame in  end_frames:
         np_frame = np.array(frame)
         writer.append_data(np_frame)
 
