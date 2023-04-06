@@ -18,6 +18,11 @@ it works on free colab plan
 
 ## Examples:
 
+The painting:
+
+
+https://user-images.githubusercontent.com/62482657/230250573-736e5630-571c-42da-9c3f-bb32d291a026.mp4
+
 
 
 A psychodelic jungle:
