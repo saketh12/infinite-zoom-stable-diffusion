@@ -42,7 +42,7 @@ https://user-images.githubusercontent.com/47415815/220372351-76a8b510-a42c-4025-
 
  - Original idea and 1st version of the notebook was created by [hardmaru](https://github.com/hardmaru)
  - Thereafter [BalintKomjati](https://github.com/BalintKomjati) made the following improvements:
-    - Adopted to run on Google Colab
+    - Adapted to run on Google Colab
     - Introduced "interpolation" between outpainted images to create smoother videos. This allows to use wider outpainting masks which tend to generate larger coherent structures, without unpleasant jumps between frames.
     - Put the whole product into a intuitive, user friendly notebook (at least that was the intention :) )
  - Then [Vahid](https://github.com/v8hid) made the UI better and added a local version:
