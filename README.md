@@ -15,6 +15,7 @@ it works on free colab plan
 
 >for more access and experimenting
 
+### **[automatic1111 webui extention](https://github.com/v8hid/infinite-zoom-automatic1111-webui)** 👈
 
 ## Examples:
 
